@@ -1,4 +1,7 @@
 language: php
 php:
   - 7.2
+before_script:
+  - cd travis-ci-demo/
+  - composer install
 script: vendor/bin/phpunit --testdox src/Webplumbr/Sample/Tests/
